@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var currentUser = User as RoleBaseSecurity.CustomSecurity.CustomPrincipal;
+
+}
+
+<h2>WelCome @User.Identity.Name</h2>
+
+@currentUser.Name <br />
+@currentUser.Contact <br />
+@currentUser.Email <br />
+@currentUser.RoleName 
+
